@@ -1,0 +1,61 @@
+{
+    "expo": {
+        "name": "Zell",
+        "slug": "Zell",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/images/Zell.al-Green.png",
+        "scheme": "myapp",
+        "userInterfaceStyle": "automatic",
+        "newArchEnabled": true,
+        "ios": {
+            "supportsTablet": true,
+            "bundleIdentifier": "com.zell.app"
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/images/Zell.al-Green.png",
+                "backgroundColor": "#ffffff"
+            },
+            "permissions": [
+                "android.permission.ACCESS_COARSE_LOCATION",
+                "android.permission.ACCESS_FINE_LOCATION"
+            ],
+            "package": "com.zell.app"
+        },
+        "web": {
+            "bundler": "metro",
+            "output": "static",
+            "favicon": "./assets/images/Zell.al-Green.png"
+        },
+        "plugins": [
+            "expo-router",
+            [
+                "expo-splash-screen",
+                {
+                    "image": "./assets/images/Zell.al-Green.png",
+                    "imageWidth": "90%",
+                    "resizeMode": "contain",
+                    "backgroundColor": "#ffffff"
+                }
+            ],
+            [
+                "expo-location",
+                {
+                    "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+                }
+            ]
+        ],
+        "experiments": {
+            "typedRoutes": true
+        },
+        "extra": {
+            "router": {
+                "origin": false
+            },
+            "eas": {
+                "projectId": "ce42f3dd-ee8b-40d0-9013-e65926a44f2a"
+            }
+        }
+    }
+}
